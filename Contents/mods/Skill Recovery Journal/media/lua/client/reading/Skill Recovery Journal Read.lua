@@ -61,7 +61,7 @@ function ISReadABook:update()
 			elseif pSteamID ~= 0 then
 				JMD["ID"] = JMD["ID"] or {}
 				local journalID = JMD["ID"]
-				if journalID["steamID"] and (journalID["steamID"] ~= pSteamID) then
+				if journalID["steamID"] and (SandboxVars.SkillRecoveryJournal.ShareRecoveryJournalRead == false) and (journalID["steamID"] ~= pSteamID) then
 					delayedStop = true
 					sayText = getText("IGUI_PlayerText_DoesntFeelRightToRead")
 				end

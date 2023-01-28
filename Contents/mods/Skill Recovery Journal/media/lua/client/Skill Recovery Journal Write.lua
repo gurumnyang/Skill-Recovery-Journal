@@ -39,7 +39,7 @@ function ISCraftAction:update()
 			local pSteamID = self.character:getSteamID()
 
 			local bOwner = true
-			if pSteamID ~= 0 and journalID and journalID["steamID"] and (journalID["steamID"] ~= pSteamID) then bOwner = false end
+			if pSteamID ~= 0 and journalID and journalID["steamID"] and (SandboxVars.SkillRecoveryJournal.ShareRecoveryJournalWrite == false) and (journalID["steamID"] ~= pSteamID) then bOwner = false end
 
 			if bOwner and (#self.gainedRecipes > 0) then
 				self.recipeIntervals = self.recipeIntervals+1

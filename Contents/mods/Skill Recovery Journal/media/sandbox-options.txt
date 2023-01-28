@@ -38,3 +38,9 @@ option SkillRecoveryJournal.RecoverRecipes
 
 option SkillRecoveryJournal.RecoveryJournalUsed
 {type = boolean, default = false, page = SkillRecoveryJournal, translation = SkillRecoveryJournalUsed,}
+
+option SkillRecoveryJournal.ShareRecoveryJournalRead
+{type = boolean, default = false, page = SkillRecoveryJournal, translation = ShareRecoveryJournal,}
+
+option SkillRecoveryJournal.ShareRecoveryJournalWrite
+{type = boolean, default = false, page = SkillRecoveryJournal, translation = ShareRecoveryJournalWrite,}
